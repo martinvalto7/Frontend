@@ -1,0 +1,18 @@
+.product-info{
+    display: inline-block;
+    width: 15;
+}
+.product-description{
+    display: inline-block;
+    width: 15;
+
+}
+.product-container{
+    display: inline-block;
+    width: 15;
+
+}
+.product-buy{
+    float: right;
+
+}

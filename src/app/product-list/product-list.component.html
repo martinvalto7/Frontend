@@ -1,0 +1,16 @@
+<p>product-list </p>
+
+<div class="product-container"*ngFor ="let Product of productList">
+    <div class=" product-info" > 
+        <h5> {{Product.ProductName }} (Prix {{Product.Price}})</h5>
+        <img width=" 100px" src="{{Product.PictureUrl}}"/>
+
+    </div>
+    <div class=" product-descprition">
+          {{ Product.Description}}
+    </div>
+    <button class="product-buy" >
+        Acheter
+    </button>
+
+</div>
