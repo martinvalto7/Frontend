@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     //Get products from api by http
     this.http
-    .get("http://localhost:62397/api/Product")
+    .get("http://localhost:62397/api/product")
     .subscribe(Products =>{
       this.productList=Products;
 

@@ -1,16 +1,59 @@
-<p>product-list </p>
+<section id="main" class="wrapper style1">
+    <header class="major">
+        <h2> </h2>
+        <p>L'ensemble de nos produits.</p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="8u" style="width: 63%">
 
-<div class="product-container"*ngFor ="let Product of productList">
-    <div class=" product-info" > 
-        <h5> {{Product.ProductName }} (Prix {{Product.Price}})</h5>
-        <img width=" 100px" src="{{Product.PictureUrl}}"/>
 
+                <section  *ngFor="let product of productList">
+                    <h2>{{product.productName}} (Prix: {{product.price}}€)</h2>
+                    <!-- <h5>Mémorise vos habitudes et s'auto-programme pour vous simplifier la vie. </h5> -->
+                    <a href="#" class="image fit"><img src="{{product.pictureUrl}}" alt=""></a>
+                    <p>
+                        {{product.description}}
+                        <a href="#" class="button special" style="float: right; margin: 10px 0 ;"> Achat </a>
+                    </p>
+
+                </section>
+
+
+
+            </div>
+            <div class="4u" style="width: 30%;">
+                <section>
+                    <h3>Nest Protect</h3>
+                    <h5>Le détecteur de fumée qui analyse, parle et vous alerte sur votre mobile.</h5>
+                    <a href="#" class="image fit"><img src="images/nest-protect.jpg" alt=""></a>
+                    <p>Il vous dit où se trouve le danger.
+
+                        Les messages vocaux sont diffusés sur tous vos détecteurs. Ainsi, le détecteur installé dans
+                        votre chambre peut vous annoncer qu’il y a de la fumée au rez-de-chaussée.
+
+                    </p>
+                    <ul class="actions">
+                        <a href="#" class="button special">Achat</a>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <h3>Fournisseur</h3>
+                    <ul class="alt">
+                        <li><a
+                                href="https://www2.meethue.com/fr-be?origin=rUEQgvNB&amp;pcrid=339355192232|mckv|srUEQgvNB_dc|plid||slid||&amp;gclid=CjwKCAiAxMLvBRBNEiwAKhr-nJXfGfaAPrDdbp2G6txH3oYsuyt1Y9iOMDMQ9CvV7z8-3UIwwQxlYRoCJvgQAvD_BwE">Philips
+                                Hue</a></li>
+                        <li><a href="https://store.google.com/category/connected_home">Google Home</a></li>
+                        <li><a href="https://nest.com/be/fr/">Google Nest</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </div>
-    <div class=" product-descprition">
-          {{ Product.Description}}
-    </div>
-    <button class="product-buy" >
-        Acheter
-    </button>
+</section>
 
-</div>
+
+
+
+
